@@ -47,7 +47,8 @@ class _MyHomePageState extends State<MyHomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           
           children: <Widget>[
-            cringe ? const Text('CRINGE DETECTED'): const Text('everything is normal'),
+            cringe ? const Text('CRINGE DETECTED',style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20))
+            : const Text('everything is normal',style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20)),
             Padding(
               padding: const EdgeInsets.all(16.0),
               child: SizedBox(
